@@ -9,7 +9,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import SearchButton from "./SearchButton";
-import { handleSearch } from "../actions/search";
 
 export default function SearchInput() {
   return (
@@ -26,7 +25,7 @@ export default function SearchInput() {
         <div className="flex w-full gap-4 py-4">
           <div className="relative w-full">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-            <form action={handleSearch}>
+            <form>
               <Input
                 className="w-full p-6 pl-10 border rounded"
                 placeholder="검색어를 입력하세요."
