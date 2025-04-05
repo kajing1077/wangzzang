@@ -46,7 +46,12 @@ export async function generateStaticParams() {
 
   // 중복 제거 후 경로 생성
   const uniqueCategories = [...new Set(posts.map((post) => post.category))];
-  const paths = uniqueCategories.map((category) => ({
+
+  const filteredCategories = uniqueCategories.filter(
+    (category) => category !== undefined
+  );
+
+  const paths = filteredCategories.map((category) => ({
     category,
   }));
 
