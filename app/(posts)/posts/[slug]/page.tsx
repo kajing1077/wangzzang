@@ -70,11 +70,13 @@ export default async function PostDetail({
           <Breadcrumb className="mb-4 break-all text-sm font-semibold leading-5 tracking-wider text-stone-500">
             <BreadcrumbList>
               <BreadcrumbItem>
-                <BreadcrumbLink href="/">홈</BreadcrumbLink>
+                <BreadcrumbLink href="/wangzzang">홈</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href={`/categories/${frontmatter.category}`}>
+                <BreadcrumbLink
+                  href={`/wangzzang/categories/${frontmatter.category}`}
+                >
                   {frontmatter.category}
                 </BreadcrumbLink>
               </BreadcrumbItem>

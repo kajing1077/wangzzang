@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kajing1077.github.io/wangzzang/sitemap.xml

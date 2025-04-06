@@ -3,12 +3,13 @@ import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  basePath: "/wangzzang",
   output: "export",
-  // basePath: "/wangzzang",
   images: {
     unoptimized: true,
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  trailingSlash: true,
 };
 const withMDX = createMDX({
   // Add markdown plugins here, as desired

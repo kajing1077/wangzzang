@@ -20,7 +20,7 @@ export default async function Home() {
 
   return (
     <main className="flex-1 mb-24 w-full max-w-screen-lg scroll-mt-0 break-all leading-5 tracking-wider text-neutral-800 lg:mb-24">
-      <PostListContainer category="최신글" posts={posts} searchQuery="" />
+      <PostListContainer category="최신글" posts={posts} />
     </main>
   );
 }
